@@ -8,6 +8,9 @@ class ElectionSystem {
         $this->db = $db;
     }
 
+
+    
+
     // Functie voor het ministerie om partijen goed te keuren
     public function approveParty($partyId) {
         $stmt = $this->db->prepare("UPDATE political_parties SET approved = 1 WHERE id = ?");
